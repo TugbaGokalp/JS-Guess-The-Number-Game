@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     background-color: rgb(149, 183, 141);
+     text-align: center;
+     margin-top: 150px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+button {
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.guess {
+    margin-bottom: 50px;
+}
+
+.wnumber {
+    margin-top: 30px;
+}
