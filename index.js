@@ -7,11 +7,12 @@ counter = 0;
 document.getElementById("tahmin-btn").addEventListener("click", function () {
     guess = document.getElementById("tahmin-input").value;
 
-    // if (guess === "" || guess < min || guess > max) {
-    //     document.getElementById("result").innerHTML = "HATA!";
-    //     document.getElementById("tahmin-input").value = "";
-    // } else
-     if (guess < sayi) {
+    if (guess === "" || guess < min || guess > max) {
+        document.getElementById("result").innerHTML = "HATA!";
+        document.getElementById("tahmin-input").value = "";
+    } else {
+    if (guess < sayi) {
+        document.getElementById("result").innerHTML = "";
         counter++;
         min = guess;
         document.getElementById("result").innerHTML = `Enter a number between ${min} and ${max}. number of attempts: ${counter}`;
@@ -27,7 +28,7 @@ document.getElementById("tahmin-btn").addEventListener("click", function () {
         document.getElementById("result").innerHTML = "DOĞRU TAHMİN, TEBRİKLER🎉";
         document.getElementById("result").style.color = "green";
         document.getElementById("tahmin-input").value = "";
-    }
+    }}
 });
 
 document.getElementById("tahmin-input").addEventListener("keydown", (event) => {
