@@ -12,7 +12,6 @@ document.getElementById("tahmin-btn").addEventListener("click", function () {
         document.getElementById("tahmin-input").value = "";
     } else {
     if (guess < sayi) {
-        document.getElementById("result").innerHTML = "";
         counter++;
         min = guess;
         document.getElementById("result").innerHTML = `Enter a number between ${min} and ${max}. number of attempts: ${counter}`;
